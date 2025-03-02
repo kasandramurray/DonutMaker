@@ -3,6 +3,16 @@
     color: #319b8b;
 }
 
+@media screen and (max-width: 700px) {
+
+    .column-33 {
+        margin: 0;
+        width: 80% !important;
+        text-align: left;
+    }
+
+}
+
 html,
 body {
     width: 100%;
@@ -26,6 +36,9 @@ header {
 header nav ul {
     list-style: none;
     margin: 0;
+    padding: 0;
+    font-size: 1em;
+    text-transform: uppercase;
     text-align: center;
     display: block;
     width: 100%;
@@ -35,7 +48,7 @@ header nav ul {
 
 header nav ul li {
     display: inline;
-    margin: 15px;
+    margin: 24px;
 
 
 }
@@ -131,30 +144,28 @@ h1 {
 h2 {
     text-transform: uppercase;
     color: white;
-    text-shadow: 0.25vw 0.1vw .0 #c70067;
+    text-shadow: 0.1em 0.1em .0 #c70067;
     background-clip: text;
-    font-size: 30px;
+    font-size: 5em;
     font-weight: 900;
     margin: 0;
 }
 
 h3 {
     text-transform: uppercase;
-    color:#ef027d;
-    text-shadow: 3px 3px 0 #ad005a;
+    color: #ef027d;
+    text-shadow: 0.05em 0.05em 0 #ad005a;
     background-clip: text;
-    font-size: 30px;
+    font-size: 5em;
     font-weight: 900;
     margin: 0;
+    line-height: 1em;
+    text-align: center;
 }
 
 .labels {
     font-weight: 600;
     color: white;
-}
-
-.container {
-
 }
 
 .container-center {
@@ -183,7 +194,7 @@ h3 {
     width: 100%;
     display: inline-block;
     text-align: center;
-    background-color:#319b8b;
+    background-color: #319b8b;
     background-size: cover;
     color: white;
 
@@ -197,26 +208,30 @@ h3 {
     text-align: center;
     background-image: url("images/sadbear.png");
     background-repeat: no-repeat;
-    background-size: 700px;
+    background-size: 40vw;
     background-position: left bottom;
+    background-position-x: -5vw;
 }
 
 .container-center-teal h2 {
     text-transform: uppercase;
     color: white;
-    text-shadow: 0.25vw 0.1vw .0 #17695d;
+    text-shadow: .05em .05em .0 #17695d;
     text-align: center;
     background-clip: text;
-    font-size: 30px;
+    font-size: 5em;
     font-weight: 900;
     margin: 0;
+    line-height: 1em;
 
 }
 
-.container-center-teal p, ul, li {
+.container-center-teal p,
+ul,
+li {
     color: white;
     font-weight: 400;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
 
@@ -225,7 +240,7 @@ h3 {
 }
 
 .column-33 {
-    width: 33%;
+    width: 50vw;
     margin: auto;
     padding: 20px;
     text-align: left;
