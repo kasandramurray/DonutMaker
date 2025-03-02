@@ -1,19 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Donut Maker</title>
 </head>
+
 <body>
-    
-    <div><h1>Donut Maker</h1></div>
-    <div id="counter">0</div>
-    <button onclick="clickDonut()">Click for Donut</button>
+
+    <!-- Start Header -->
+    <header>
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li><a href="#howToPlay">How to Play</a></li>
+                    <li><a href="#fred">Fred the Baker</a></li>
+                    <li><a href="https://orteil.dashnet.org/cookieclicker/" target="_blank">Inspiration</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
 
-    <script src ="scripts.js"></script>
+    <!-- Start Main Content -->
+    <div class="container">
+        <div class="container-center">
+            <h1>
+                <img style="max-width:250px;" src="images/Donut_Bear.png" alt="">
+                <br>Donut Maker 9000
+            </h1>
+            <div id="counter" class="column-2"></div>
+            <div class="column-2">
+                <img style="max-height:40px;" src="images/donut.png" alt="">
+            </div><br>
+            <button onclick="clickDonut()">Click for Donut</button><br>
+        </div>
+
+        <div class="container-center-sprinkles">
+
+            <h2>Upgrades</h2>
+            <p class="labels">Number of Auto Clickers: <label id="autoCount">0</label></p>
+            <p class="labels">Cost for next auto clicker: <label id="autoCost"></label></p>
+            <button id="autoClicker" onclick="clickAutoDonut()" disabled>Buy Auto Clicker</button>
+
+        </div>
+        <div class="container-center-sadBear">
+            <h3>Reset the Game?</h3>
+            <p>By clicking reset your number of donuts and auto clickers will be set back to 0.</p>
+            <div>
+                <button onclick="reset()">Reset</button>
+            </div>
+        </div>
+        <div class="container-center-teal">
+            <div class="column-33">
+                <h2 id="howToPlay">How to Play</h2>
+                <p>
+                    Fred the baker is retiring, but his passion for donuts still burns bright. He invented the Donut
+                    Maker 9000,
+                    and put you in charge of it. Luckily he built an auto clicker button that will make donuts for you
+                    every second.
+                    Before Fred hung up his apron you did hear him say he couldn't wait for "Total Donut World
+                    Domination!"
+                    You aren't sure what that is about, but I doubt you need to worry.
+                <ol>
+                    <li>Click the "Click for Donut" button to increase the number of donuts.</li>
+                    <li>Click on "Buy Auto Clicker" button to purchase an auto clicker</li>
+                    <ul>
+                        <li>For each auto clicker you have purchased an additional donut will be made per second.</li>
+                    </ul>
+                    <li>Click the "Reset" button to start the game from the beginning (0 donuts)</li>
+                </ol>
+                </p>
+            </div>
+        </div>
+
+        <div class="container-center">
+            <div class="column-33">
+                <h3 id="fred">Fred the Baker</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque asperiores voluptas explicabo.
+                    Consequuntur quod quo ex quaerat provident. Hic, impedit error inventore voluptates harum tempore
+                    amet rem similique tempora repellendus.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quibusdam tempora ut dolor quam
+                    esse? Vel, officiis voluptatem?
+                    Dolore odio maxime incidunt nisi similique consequuntur impedit modi, ducimus hic sed.
+                    <br>
+                    <br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse aperiam neque inventore dolorem amet
+                    repudiandae deserunt pariatur tempore laudantium earum? Esse id quam officiis. Cumque velit incidunt
+                    cum minus ex!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, quos at laudantium, cum voluptatum
+                    fugiat commodi quis, eligendi in optio tempore cupiditate. Quidem fugiat odio, id nam dignissimos
+                    asperiores eligendi!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quos exercitationem molestias,
+                    sapiente cupiditate soluta in veniam, asperiores illo repudiandae inventore quod dolorem obcaecati
+                    enim, distinctio pariatur tenetur voluptatum unde!
+                </p>
+            </div>
+        </div>
+
+
+        <div class="container-center-sprinkles">
+
+            <h2 id="contact">Contact Us</h2>
+            <p style="color: white; font-weight: bold; size: 2vw; line-height: 2vw;">
+                Phone: 555-123-4567
+<br>
+                Email: donutdomination@donutmaker9000.com
+                <br>
+                Address:
+
+
+            </p>
+
+
+        </div>
+    </div>
+    </div>
+
+
+
+
+    </div>
+
+
+    <!-- Start Footer -->
+    <footer>
+        <p>
+            Copyright &copy;
+            <script>
+                document.write(new Date().getFullYear());
+            </script>
+            Kasandra Murray All Rights Reserved
+        </p>
+    </footer>
+
+    <script src="scripts.js"></script>
     <script src="apps.js"></script>
 </body>
+
 </html>
